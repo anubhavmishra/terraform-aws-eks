@@ -84,9 +84,9 @@ locals {
     ami_release_version                      = ""                                                   # AMI Release Version of the Managed Node Groups
     source_security_group_id                 = []                                                   # Source Security Group IDs to allow SSH Access to the Nodes. NOTE: IF LEFT BLANK, AND A KEY IS SPECIFIED, THE SSH PORT WILL BE OPENNED TO THE WORLD
     node_group_k8s_labels                    = {}                                                   # Kubernetes Labels to apply to the nodes within the Managed Node Group
-    node_group_desired_capacity              = 1                                                    # Desired capacity of the Node Group
-    node_group_min_capacity                  = 1                                                    # Min capacity of the Node Group (Minimum value allowed is 1)
-    node_group_max_capacity                  = 3                                                    # Max capacity of the Node Group
+    desired_capacity                         = 1                                                    # Desired capacity of the Node Group
+    min_capacity                             = 1                                                    # Min capacity of the Node Group (Minimum value allowed is 1)
+    max_capacity                             = 3                                                    # Max capacity of the Node Group
     node_group_iam_role_arn                  = ""                                                   # IAM role to use for Managed Node Groups instead of default one created by the automation
     node_group_additional_tags               = {}                                                   # Additional tags to be applied to the Node Groups
   }
