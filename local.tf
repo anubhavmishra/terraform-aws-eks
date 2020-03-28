@@ -88,7 +88,7 @@ locals {
     min_capacity                             = 1                                                    # Min capacity of the Node Group (Minimum value allowed is 1)
     max_capacity                             = 3                                                    # Max capacity of the Node Group
     node_group_iam_role_arn                  = ""                                                   # IAM role to use for Managed Node Groups instead of default one created by the automation
-    node_group_additional_tags               = {}                                                   # Additional tags to be applied to the Node Groups
+    additional_tags                          = {}                                                   # Additional tags to be applied to the Node Groups
   }
 
   workers_group_defaults = merge(
